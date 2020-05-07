@@ -12,7 +12,7 @@ Welcome to bio_hdf_docs's documentation!
 
 
 
-Indices and tables only test
+Indices and tables
 ==================
 
 * :ref:`genindex`
