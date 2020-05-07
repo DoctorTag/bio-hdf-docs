@@ -1,0 +1,273 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>&lt;no title&gt; &mdash; bio_hdf_docs v1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to bio_hdf_docs’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bio_hdf_docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul class="simple">
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bio_hdf_docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>&lt;no title&gt;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/README.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p># BioSensor Healthcare Development Framework</p>
+<p>BioSensor Healthcare Development Framework (BIO-HDF) is the development framework for health applications with BioSensor-F58GM,Currently only supported [ESP32](<a class="reference external" href="https://espressif.com/en/products/hardware/esp32/overview">https://espressif.com/en/products/hardware/esp32/overview</a>) chip.</p>
+<p>## A completed BioSensor project including software and hardware solutions; also depending on the following projects:</p>
+<p>PC Evaluation Tool using LabWindows CVI :
+[<a class="reference external" href="https://github.com/feelkit/bioDemo_labwindows_cvi](https://github.com/feelkit/bioDemo_labwindows_cvi">https://github.com/feelkit/bioDemo_labwindows_cvi](https://github.com/feelkit/bioDemo_labwindows_cvi</a>)</p>
+<p>Andorid BioSensor project: [<a class="reference external" href="https://github.com/feelkit/biosensor-android](https://github.com/feelkit/biosensor-android">https://github.com/feelkit/biosensor-android](https://github.com/feelkit/biosensor-android</a>)</p>
+<p>## Overview</p>
+<p>BIO-HDF supports development of health applications used the Biosensor module:F58GM,Currently only for the Espressif Systems [ESP32](https://espressif.com/en/products/hardware/esp32/overview) chip in the most comprehensive way. We will support more chips in the future.With the BIO-HDF, you can easily add features, develop health applications from simple to complex:</p>
+<ul class="simple">
+<li><p>To measure and analysis various types of bio-data such as ECG,BCG,EEG,RESP,GSR,HR,PPG,Spo2,HCM,BIA and Temperature …</p></li>
+<li><p>For wristband devices,supported ECG,RESP,HR,Spo2,BIA,HCM,Temperature and Weight …</p></li>
+<li><p>About contactless vital sign sensor such as sleep monitoring strip under mattress, supported RESP,HR,Sleep,HRV …</p></li>
+<li><p>Other Fitness devices,Mobile health devices and robots …</p></li>
+</ul>
+<p>## Developing with the BIO-HDF</p>
+<p>### Quick Start</p>
+<p>You need [stable version of ESP-IDF](<a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/stable/versions.html">https://docs.espressif.com/projects/esp-idf/en/stable/versions.html</a>) to provide the toolchain, the Biosensor demo board.</p>
+<p><strong>Note:</strong>  If this is your first exposure to ESP32 and ESP-IDF, proceed to [Getting Started](<a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/stable/get-started/index.html">https://docs.espressif.com/projects/esp-idf/en/stable/get-started/index.html</a>) documentation.</p>
+<p>Clone the BIO-HDF repository, set up <cite>HDF_PATH</cite>, and then compile, flash and monitor applications in the same way as when working with ESP-IDF.</p>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a>`
+git clone –recursive <a class="reference external" href="https://github.com/feelkit/bio-hdf.git">https://github.com/feelkit/bio-hdf.git</a></p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">Linux</span> <span class="pre">and</span> <span class="pre">macOS</span>
+<span class="pre">`</span></code>
+cd ~/esp
+cp -r $HDF_PATH/examples/get-started/hello_world .
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">Windows</span>
+<span class="pre">`</span></code>
+cd %userprofile%esp
+xcopy /e /i %HDF_PATH%examplesget-startedhello_world hello_world
+<a href="#id3"><span class="problematic" id="id4">``</span></a>`
+If you clone project without <cite>–recursive</cite> flag, please goto the <cite>bio-hdf</cite> directory and run command <cite>git submodule update –init</cite> before doing anything.</p>
+<p>### Hardware
+The BioSensor-F58GM is a health module; it measures and transfers various types of bio-data such as ECG,BCG,EEG,RESP,GSR,HR,PPG,Spo2,HCM,BIA and Temperature … , integrated Bio-Processor with Analog Front-End to make an all-in-one health monitoring solution.</p>
+<p>We have released a number of boards for BIO-HDF to develop healthcare applications with BioSensor-F58GM , including:</p>
+<div class="line-block">
+<div class="line">BioSensor Module F58GM | PIEZO-ESP32-F58GM Sleep Monitoring Strip | WRISTBAND-ESP32-F58GM Development Board |</div>
+</div>
+<p><a href="#id5"><span class="problematic" id="id6">|:----:|</span></a>:—-:<a href="#id7"><span class="problematic" id="id8">|:----:|</span></a>
+|  [&lt;img src=”docs/images/F58GM.png” width=”400” alt =”BioSensor-F58GM” align=”center” /&gt;](<a class="reference external" href="https://github.com/feelkit/bio-hdf/blob/master/docs/F58GM_V20C_EN.pdf">https://github.com/feelkit/bio-hdf/blob/master/docs/F58GM_V20C_EN.pdf</a>)  |  [&lt;img src=”docs/images/sleep_strip.png” width=”380” alt =”Sleep Monitoring Strip” align=”center” /&gt;](<a class="reference external" href="https://github.com/feelkit/sleep-monitor">https://github.com/feelkit/sleep-monitor</a>)  |  [&lt;img src=”docs/images/wristband.png” width=”380” alt =”Wristband Development Board” align=”center” /&gt;](<a class="reference external" href="https://github.com/feelkit/bio-hdf">https://github.com/feelkit/bio-hdf</a>)  |
+|  [Getting Started with BioSensor-F58GM](<a class="reference external" href="https://github.com/feelkit/bio-hdf/blob/master/docs/F58GM_V20C_EN.pdf">https://github.com/feelkit/bio-hdf/blob/master/docs/F58GM_V20C_EN.pdf</a>)  |  [Getting Started with Sleep monitoring strip](<a class="reference external" href="https://github.com/feelkit/sleep-monitor">https://github.com/feelkit/sleep-monitor</a>)  |  [Coming soon](<a class="reference external" href="https://github.com/feelkit/bio-hdf">https://github.com/feelkit/bio-hdf</a>)  |</p>
+<p>#### BioSensor-F58GM</p>
+<ul class="simple">
+<li><p>F58GM supports 8 electrodes to achieve applications with human electrical activities and impedance activities;</p></li>
+<li><p>Specially, for some common healthcare applications, BioSensor supports direct adaptation of these sensors, such as body temperature, weight, piezoelectric and so on.</p></li>
+<li><p>Optional,F58GM integrates red (660 nm), green (520 nm) and infrared (940 nm) three-color LED and photodiode(PD) sensor to realize PPG-related applications.</p></li>
+<li><p>Optional, F58GM integrates Infrared thermopile for contactless medical temperature measurement, and the accuracy reaches ± 0.2 ℃ near 37 ℃.</p></li>
+<li><p>F58GM integrates MCU/DSP with biological analog front end and 24 bit ADC , hardware interface supports SPI/I2C/UART optional.</p></li>
+</ul>
+<p>#### Sleep monitoring strip
+An open-source development board, supporting Espressif Systems’ ADF and featuring voice wake-up, a wake-up button and an audio player. Designed for smart speakers and smart-home applications.</p>
+<p>[&lt;div align=”center”&gt;&lt;img src=”docs/images/sleep_strip_long.png” width=”700” alt =”Sleep Monitoring Strip Overview” align=”center” /&gt;&lt;/div&gt;](<a class="reference external" href="https://github.com/feelkit/sleep-monitor">https://github.com/feelkit/sleep-monitor</a>)</p>
+<ul class="simple">
+<li><p>[Getting Started with ESP32-LyraT](<a class="reference external" href="https://docs.espressif.com/projects/esp-adf/en/latest/get-started/get-started-esp32-lyrat.html">https://docs.espressif.com/projects/esp-adf/en/latest/get-started/get-started-esp32-lyrat.html</a>)</p></li>
+<li><p>[ESP32-LyraT V4.3 Hardware Reference](<a class="reference external" href="https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/board-esp32-lyrat-v4.3.html">https://docs.espressif.com/projects/esp-adf/en/latest/design-guide/board-esp32-lyrat-v4.3.html</a>)</p></li>
+<li><p>[ESP32-LyraT Schematic (PDF)](<a class="reference external" href="https://dl.espressif.com/dl/schematics/esp32-lyrat-v4.3-schematic.pdf">https://dl.espressif.com/dl/schematics/esp32-lyrat-v4.3-schematic.pdf</a>)</p></li>
+</ul>
+<p>#### Wristband Development Board</p>
+<p>Designed for smart speakers and AI applications. Supports Acoustic Echo Cancellation (AEC), Automatic Speech Recognition (ASR), Wake-up Interrupt and Voice Interaction.</p>
+<p>[&lt;div align=”center”&gt;&lt;img src=”docs/_static/esp32-lyratd-msc-v2.2-a-top.png” width=”740” alt =”ESP32-LyraTD-MSC Development Board Overview” align=”center” /&gt;&lt;/div&gt;](<a class="reference external" href="https://docs.espressif.com/projects/esp-adf/en/latest/get-started/get-started-esp32-lyratd-msc.html">https://docs.espressif.com/projects/esp-adf/en/latest/get-started/get-started-esp32-lyratd-msc.html</a>)</p>
+<ul class="simple">
+<li><p>[Getting Started with ESP32-LyraTD-MSC](<a class="reference external" href="https://docs.espressif.com/projects/esp-adf/en/latest/get-started/get-started-esp32-lyratd-msc.html">https://docs.espressif.com/projects/esp-adf/en/latest/get-started/get-started-esp32-lyratd-msc.html</a>)</p></li>
+<li><p>[ESP32-LyraTD-MSC Schematic Lower Board A (PDF) ](<a class="reference external" href="https://dl.espressif.com/dl/schematics/ESP32-LyraTD-MSC_A_V2_2-1109A.pdf">https://dl.espressif.com/dl/schematics/ESP32-LyraTD-MSC_A_V2_2-1109A.pdf</a>), [Upper Board B (PDF)](<a class="reference external" href="https://dl.espressif.com/dl/schematics/ESP32-LyraTD-MSC_B_V1_1-1109A.pdf">https://dl.espressif.com/dl/schematics/ESP32-LyraTD-MSC_B_V1_1-1109A.pdf</a>)</p></li>
+</ul>
+<p>#### Wristband Development Board</p>
+<p>An open-source mono development board. Designed for connected smart speakers and smart-home audio applications.</p>
+<p>Coming soon…</p>
+<p>#### Examples</p>
+<p>Check folder [examples](examples) that contains sample applications to demonstrate API features of the ESP-ADF.</p>
+<p># Resources</p>
+<ul class="simple">
+<li><p>[Documentation](<a class="reference external" href="https://docs.espressif.com/projects/esp-adf/en/latest/index.html">https://docs.espressif.com/projects/esp-adf/en/latest/index.html</a>) for the latest version of <a class="reference external" href="https://docs.espressif.com/projects/esp-adf/">https://docs.espressif.com/projects/esp-adf/</a>. This documentation is built from the [docs directory](docs) of this repository.</p></li>
+<li><p>The [esp32.com forum](<a class="reference external" href="https://esp32.com/">https://esp32.com/</a>) is a place to ask questions and find community resources. On the forum there is a [section dedicated to ESP-ADF](<a class="reference external" href="https://esp32.com/viewforum.php?f=20">https://esp32.com/viewforum.php?f=20</a>) users.</p></li>
+<li><p>[Check the Issues section on github](<a class="reference external" href="https://github.com/espressif/esp-adf/issues">https://github.com/espressif/esp-adf/issues</a>) if you find a bug or have a feature request. Please check existing Issues before opening a new one.</p></li>
+<li><p>If you’re interested in contributing to ESP-ADF, please check the [Contributions Guide](<a class="reference external" href="https://esp-idf.readthedocs.io/en/latest/contribute/index.html">https://esp-idf.readthedocs.io/en/latest/contribute/index.html</a>).</p></li>
+</ul>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to bio_hdf_docs’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, seanfan
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
